@@ -25,7 +25,7 @@ void printList(LinkList l)
 LinkList HeadInsert(LinkList l)
 {
     LNode *s;
-    int x;
+    ElemType x;
 
     l = (LinkList)malloc(sizeof(LNode));
     l->next = NULL;
@@ -33,7 +33,7 @@ LinkList HeadInsert(LinkList l)
     printf("insert the data:");
     scanf("%d", &(x));
 
-    while (x!=5678)
+    while (x!=END)
     {
         s = (LNode *)malloc(sizeof(LNode));
         s->elem = x;
@@ -44,4 +44,27 @@ LinkList HeadInsert(LinkList l)
     }
     return l;
 
+}
+
+//
+//Tail Insert
+LinkList TailInsert(LinkList l)
+{
+    ElemType x;
+    LNode *s = NULL;
+    LNode *r = l;
+    l = (LinkList)malloc(sizeof(LNode));
+    printf("Tail Insert, input your data:");
+    scanf("%d", &x);
+    while(x!=END)
+    {
+        s = (LNode *)malloc(sizeof(LNode));
+        s->elem = x;
+        r->next = s;
+        r = s;
+        printf("input the data:");
+        scanf("%d", &x);
+    }
+    r->next = NULL;
+    return l;
 }
