@@ -15,3 +15,6 @@ LinkList HeadInsert(LinkList l);
 
 //Tail Insert
 LinkList TailInsert(LinkList l);
+
+//Find elem Node
+LNode* GetElem(LinkList l, ElemType x);

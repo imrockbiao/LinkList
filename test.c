@@ -13,9 +13,14 @@ void test01()
 //尾插测试
 void test02()
 {
-    printf("尾插测试");
-    printf("头插测试\n");
+    printf("尾插测试\n");
     LinkList l;
     l = TailInsert(l);
     printList(l);
+}
+
+void test03()
+{
+    //测试查找
+    //GetElem(l, 5);
 }

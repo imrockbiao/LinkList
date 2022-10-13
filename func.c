@@ -68,3 +68,22 @@ LinkList TailInsert(LinkList l)
     r->next = NULL;
     return l;
 }
+
+//Find elem Node
+LNode* GetElem(LinkList l, ElemType x)
+{
+    /*
+        当查询的元素属于链表， 返回节点， 若不在链表内， 返回NULL
+    */
+    if(l == NULL)
+    {
+        return NULL;
+    }
+    LNode *p = l->next;
+    while (p && p->elem!=x)
+    {
+        p = p->next;
+    }
+    return p;
+    
+}
