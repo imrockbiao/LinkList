@@ -1,0 +1,20 @@
+vscode
+版本: 1.71.2
+提交: 74b1f979648cc44d385a2286793c226e611f59e7
+日期: 2022-09-14T21:12:14.256Z
+Electron: 19.0.12
+Chromium: 102.0.5005.167
+Node.js: 16.14.2
+V8: 10.2.154.15-electron.0
+
+gcc
+gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+git version 2.25.1
+
+cmake
+cmake version 3.16.3
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
