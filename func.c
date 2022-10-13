@@ -87,3 +87,26 @@ LNode* GetElem(LinkList l, ElemType x)
     return p;
     
 }
+
+
+//Delete elem Node
+LinkList DeletElem(LinkList l, ElemType x)
+{
+    if(l == NULL)
+    {
+        return NULL;
+    }
+    LNode *p = l->next;
+    LNode *t = l;
+    while (p && p->elem!=x)
+    {
+        p = p->next;
+        t = t->next;
+    }
+    if(p!=NULL)
+    {
+        t->next = p->next;
+        free(p);
+    }
+    return l;
+}
